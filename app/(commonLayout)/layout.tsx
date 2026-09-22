@@ -1,11 +1,12 @@
-export default function CommonProtectedLayout({
+export default function CommonLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-    CommonProtectedLayout
+
+    commonLayout
       {children}
     </>
   );

@@ -1,11 +1,11 @@
-export default function CommonProtectedLayout({
+export default function PatientDashboardLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-    CommonProtectedLayout
+    PatientDashboardLayout
       {children}
     </>
   );
