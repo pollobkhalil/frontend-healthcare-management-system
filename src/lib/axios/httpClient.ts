@@ -1,9 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { getNewTokensWithRefreshToken } from '@/services/auth.services';
-import { ApiResponse } from '@/types/api.types';
+
+
 import axios from 'axios';
 import { cookies, headers } from 'next/headers';
 import { isTokenExpiringSoon } from '../tokenUtils';
+import { ApiResponse } from '@/src/types/api.types';
+import { getNewTokensWithRefreshToken } from '@/src/services/auth.services';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
